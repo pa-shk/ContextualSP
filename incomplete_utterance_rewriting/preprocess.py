@@ -194,4 +194,4 @@ if __name__ == '__main__':
     #                         help="Please specify a dataset you want to process")
     # parsed_args = arg_parser.parse_args()
     # unified_dataset_format(parsed_args.dataset)
-    unified_dataset_format("Multi")
+    unified_dataset_format("Rewrite")
