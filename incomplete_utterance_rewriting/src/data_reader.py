@@ -47,7 +47,8 @@ class RewriteDatasetReader(DatasetReader):
         self._tokenizer = WordTokenizer(JustSpacesWordSplitter())
 
         if use_bert:
-            pretrain_model_name = 'bert-base-chinese' if language == 'zh' else 'bert-base-uncased'
+            # pretrain_model_name = 'bert-base-chinese' if language == 'zh' else 'bert-base-uncased'
+            pretrain_model_name = 'bert-base-multilingual-uncased'
             self._indexer = {'bert': PretrainedBertIndexer(pretrained_model=pretrain_model_name,
                                                            use_starting_offsets=False,
                                                            do_lowercase=True,
