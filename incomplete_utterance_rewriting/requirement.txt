@@ -6,5 +6,3 @@ torch==1.2.0
 rouge==0.3.2
 nltk==3.4.5
 tqdm==4.42.1
-jieba
-spacy
